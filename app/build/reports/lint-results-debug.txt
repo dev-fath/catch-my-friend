@@ -1,0 +1,131 @@
+/Users/sckim1-n/Desktop/catch/app/build.gradle:11: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdkVersion 33
+        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/sckim1-n/Desktop/catch/app/build.gradle:40: Warning: A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.8.10 is available: 1.9.23 [GradleDependency]
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:41: Warning: A newer version of androidx.core:core-ktx than 1.9.0 is available: 1.15.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.9.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:42: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:43: Warning: A newer version of com.google.android.material:material than 1.8.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.8.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:44: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:47: Warning: A newer version of androidx.compose.ui:ui than 1.4.0 is available: 1.7.8 [GradleDependency]
+    implementation "androidx.compose.ui:ui:$compose_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:48: Warning: A newer version of androidx.compose.material:material than 1.4.0 is available: 1.7.8 [GradleDependency]
+    implementation "androidx.compose.material:material:$compose_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:49: Warning: A newer version of androidx.compose.ui:ui-tooling-preview than 1.4.0 is available: 1.7.8 [GradleDependency]
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:50: Warning: A newer version of androidx.activity:activity-compose than 1.7.0 is available: 1.10.1 [GradleDependency]
+    implementation 'androidx.activity:activity-compose:1.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:51: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.1 is available: 2.8.7 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:54: Warning: A newer version of androidx.camera:camera-camera2 than 1.2.2 is available: 1.4.2 [GradleDependency]
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:55: Warning: A newer version of androidx.camera:camera-lifecycle than 1.2.2 is available: 1.4.2 [GradleDependency]
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:56: Warning: A newer version of androidx.camera:camera-view than 1.2.2 is available: 1.4.2 [GradleDependency]
+    implementation "androidx.camera:camera-view:$camerax_version"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/build.gradle:59: Warning: A newer version of androidx.datastore:datastore-preferences than 1.0.0 is available: 1.1.4 [GradleDependency]
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/colors.xml:15: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#FF000000</color>
+           ~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/colors.xml:17: Warning: The resource R.color.pastel_blue appears to be unused [UnusedResources]
+    <color name="pastel_blue">#96D7F9</color>
+           ~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/colors.xml:18: Warning: The resource R.color.pastel_green appears to be unused [UnusedResources]
+    <color name="pastel_green">#B5EAD7</color>
+           ~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/colors.xml:19: Warning: The resource R.color.pastel_purple appears to be unused [UnusedResources]
+    <color name="pastel_purple">#C7CEEA</color>
+           ~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/colors.xml:20: Warning: The resource R.color.pastel_yellow appears to be unused [UnusedResources]
+    <color name="pastel_yellow">#FFEEAD</color>
+           ~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/strings.xml:11: Warning: The resource R.string.permission_required appears to be unused [UnusedResources]
+    <string name="permission_required">카메라 권한이 필요합니다</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/strings.xml:12: Warning: The resource R.string.permission_rationale appears to be unused [UnusedResources]
+    <string name="permission_rationale">캐릭터를 잡기 위해 카메라 권한이 필요해요!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sckim1-n/Desktop/catch/app/src/main/res/values/strings.xml:13: Warning: The resource R.string.grant_permission appears to be unused [UnusedResources]
+    <string name="grant_permission">권한 요청하기</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/Users/sckim1-n/Desktop/catch/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+/Users/sckim1-n/Desktop/catch/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+0 errors, 25 warnings

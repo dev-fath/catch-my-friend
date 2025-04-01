@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="conditional_incidents">
+
+    <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="10"
+            column="36"
+            startOffset="425"
+            endLine="10"
+            endColumn="77"
+            endOffset="466"/>
+        <map>
+            <entry
+                name="maxSdk"
+                int="28"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/ic_launcher_background.xml"
+            line="8"
+            column="28"
+            startOffset="262"
+            endLine="8"
+            endColumn="42"
+            endOffset="276"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.xml"
+            line="14"
+            column="32"
+            startOffset="440"
+            endLine="14"
+            endColumn="44"
+            endOffset="452"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.xml"
+            line="17"
+            column="32"
+            startOffset="581"
+            endLine="17"
+            endColumn="48"
+            endOffset="597"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="117"
+            column="39"
+            startOffset="4070"
+            endLine="117"
+            endColumn="55"
+            endOffset="4086"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `PreviewView`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="118"
+            column="70"
+            startOffset="4156"
+            endLine="118"
+            endColumn="81"
+            endOffset="4167"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `getInstance`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="124"
+            column="32"
+            startOffset="4452"
+            endLine="124"
+            endColumn="50"
+            endOffset="4470"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `setSurfaceProvider`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="124"
+            column="63"
+            startOffset="4483"
+            endLine="124"
+            endColumn="78"
+            endOffset="4498"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Field requires API level 21 (current min is %1$s): `getSurfaceProvider`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="124"
+            column="63"
+            startOffset="4483"
+            endLine="124"
+            endColumn="78"
+            endOffset="4498"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `getSurfaceProvider`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="128"
+            column="44"
+            startOffset="4624"
+            endLine="128"
+            endColumn="53"
+            endOffset="4633"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `unbindAll`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="129"
+            column="44"
+            startOffset="4679"
+            endLine="129"
+            endColumn="59"
+            endOffset="4694"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `bindToLifecycle`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="131"
+            column="48"
+            startOffset="4791"
+            endLine="131"
+            endColumn="67"
+            endOffset="4810"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Field requires API level 21 (current min is %1$s): `DEFAULT_BACK_CAMERA`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="341"
+            column="60"
+            startOffset="13173"
+            endLine="341"
+            endColumn="78"
+            endOffset="13191"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `Builder`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="341"
+            column="79"
+            startOffset="13192"
+            endLine="341"
+            endColumn="84"
+            endOffset="13197"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `build`"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NewApi"
+        severity="error"
+        message="">
+        <fix-data requiresApi="21"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/catchapp/CameraActivity.kt"
+            line="343"
+            column="22"
+            startOffset="13230"
+            endLine="343"
+            endColumn="33"
+            endOffset="13241"/>
+        <map>
+            <entry
+                name="minSdk"
+                int="21"/>
+            <entry
+                name="requiresApi"
+                int="21"/>
+            <entry
+                name="message"
+                string="Call requires API level 21 (current min is %1$s): `takePicture`"/>
+        </map>
+    </incident>
+
+</incidents>

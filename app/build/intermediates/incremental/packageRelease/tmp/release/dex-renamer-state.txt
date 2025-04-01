@@ -1,0 +1,7 @@
+#Tue Apr 01 15:22:32 KST 2025
+base.1=/Users/sckim1-n/Desktop/catch/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+path.1=classes2.dex
+base.0=/Users/sckim1-n/Desktop/catch/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
