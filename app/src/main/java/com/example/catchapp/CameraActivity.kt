@@ -58,6 +58,10 @@ import kotlin.coroutines.suspendCoroutine
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.Typography
+import androidx.compose.ui.unit.toArgb
+import androidx.compose.ui.platform.LocalSystemUiController
+import androidx.compose.ui.platform.SideEffect
+import androidx.compose.ui.platform.rememberSystemUiController
 
 class CameraActivity : ComponentActivity() {
 
@@ -108,20 +112,16 @@ class CameraActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
+        // 스테이터스바 영역까지 확장
+        window.setDecorFitsSystemWindows(false)
+        window.statusBarColor = Color.TRANSPARENT.toArgb()
+        
         outputDirectory = getOutputDirectory()
         cameraExecutor = ContextCompat.getMainExecutor(this)
         scoreManager = ScoreManager(this)
         
         setContent {
-            MaterialTheme(
-                colors = MaterialTheme.colors.copy(
-                    primary = Color(0xFFFF9DCA),
-                    primaryVariant = Color(0xFFFF6FA5),
-                    secondary = Color(0xFFFFD166),
-                    background = Color(0xFFFFFAEE),
-                    surface = Color.White
-                )
-            ) {
+            CatchAppTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
@@ -134,6 +134,27 @@ class CameraActivity : ComponentActivity() {
     
     @Composable
     fun CameraScreen() {
+        val context = LocalContext.current
+        val lifecycleOwner = LocalLifecycleOwner.current
+        val configuration = LocalConfiguration.current
+        val screenWidth = configuration.screenWidthDp.dp
+        val screenHeight = configuration.screenHeightDp.dp
+        
+        // 시스템 UI 컨트롤러 설정
+        val systemUiController = rememberSystemUiController()
+        
+        // 스테이터스바와 네비게이션바를 투명하게 설정
+        SideEffect {
+            systemUiController.setSystemBarsColor(
+                color = Color.Transparent,
+                darkIcons = false
+            )
+            systemUiController.setStatusBarColor(
+                color = Color.Transparent,
+                darkIcons = false
+            )
+        }
+
         if (shouldShowPhoto) {
             PhotoResultScreen()
         } else {
