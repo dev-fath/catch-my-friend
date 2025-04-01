@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:translateX="16.2"
+        android:translateY="16.2">
+        <!-- 간단한 카메라 모양 아이콘 -->
+        <path
+            android:fillColor="@color/white"
+            android:pathData="M35,35m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" />
+        <path
+            android:fillColor="@color/secondary"
+            android:pathData="M54,30L54,24L46,24L42,20L36,20L32,24L24,24L24,30L54,30ZM54,34L24,34L24,54L54,54L54,34ZM39,50C35.14,50 32,46.86 32,43C32,39.14 35.14,36 39,36C42.86,36 46,39.14 46,43C46,46.86 42.86,50 39,50Z" />
+    </group>
+</vector> 

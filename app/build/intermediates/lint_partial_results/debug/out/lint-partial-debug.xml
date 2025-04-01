@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.color.pastel_purple"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="19"
+            column="12"
+            startOffset="782"
+            endLine="19"
+            endColumn="32"
+            endOffset="802"/>
+        <location id="R.color.pastel_blue"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="17"
+            column="12"
+            startOffset="689"
+            endLine="17"
+            endColumn="30"
+            endOffset="707"/>
+        <location id="R.color.pastel_green"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="18"
+            column="12"
+            startOffset="735"
+            endLine="18"
+            endColumn="31"
+            endOffset="754"/>
+        <location id="R.color.pastel_yellow"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="20"
+            column="12"
+            startOffset="830"
+            endLine="20"
+            endColumn="32"
+            endOffset="850"/>
+        <location id="R.color.black"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="15"
+            column="12"
+            startOffset="605"
+            endLine="15"
+            endColumn="24"
+            endOffset="617"/>
+        <location id="R.string.permission_required"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="11"
+            column="13"
+            startOffset="504"
+            endLine="11"
+            endColumn="39"
+            endOffset="530"/>
+        <location id="R.string.grant_permission"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="13"
+            column="13"
+            startOffset="640"
+            endLine="13"
+            endColumn="36"
+            endOffset="663"/>
+        <entry
+            name="model"
+            string="color[surface(U),on_secondary(U),secondary_variant(U),black(D),pastel_green(D),pastel_yellow(D),primary_variant(U),error(U),on_primary(U),secondary(U),pastel_blue(D),white(U),on_surface(U),on_background(U),background(U),on_error(U),pastel_purple(D),primary(U)],drawable[ic_launcher_foreground(U),ic_launcher_background(U)],mipmap[ic_launcher_round(U),ic_launcher(U)],string[camera_warning(U),confirm_button(U),grant_permission(D),permission_required(D),no_character(U),app_name(U),delete_photo(U),catch_button(U),save_photo(U),current_score(U),character_caught(U),permission_rationale(D)],style[Theme_MaterialComponents_Light_NoActionBar(R),Theme_Catch(U)];12^b^9,13^11,14^13^12,15^13^12,23^22^11^6^9^2^e^0^7^8^1^d^c^f;;;"/>
+        <location id="R.string.permission_rationale"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="12"
+            column="13"
+            startOffset="566"
+            endLine="12"
+            endColumn="40"
+            endOffset="593"/>
+    </map>
+
+</incidents>
